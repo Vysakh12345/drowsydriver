@@ -1,0 +1,41 @@
+{%include 'adminheader.html'%}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<body>
+    <center><br><br>
+    <h1 style="color:white">Send Warning</h1><br>
+
+    <form action="" method="post">
+    <table>
+        <tr>
+            <td><textarea name="warning" id="" cols="30" rows="10" resizable="none" class="form-control"></textarea>
+            <style>
+                textarea {
+                resize: none;
+                }
+            </style></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="send" name="send" id="" class="btn btn-primary"></td>
+        </tr>
+    </table>
+</form>
+</center><br><br>
+    
+</body>
+</html>
+
+{%include 'footer.html'%}

@@ -1,0 +1,43 @@
+{% include 'carheader.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<body>
+    <center>
+
+        <h1 style="color: white;">Detect drowsiness</h1>
+        <table border="2" align="center" class="table table-primary" style="width: 800px;">
+          <tr>
+              <th>Sl.No</th>
+
+              <th>Detected</th>
+              <th>Date Time</th>
+  
+          </tr>
+          {% for i in data['view'] %}
+          <tr>
+              <td>{{loop.index}}</td>
+      
+              <td>{{i['detected']}}</td>
+              <td>{{i['datetime']}}</td>
+    
+          </tr>
+          {% endfor %}
+      </table>
+
+    </center>
+
+</body>
+</html>
+
+{% include 'footer.html' %}

@@ -1,0 +1,51 @@
+{%include 'adminheader.html'%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<body><br><br>
+    <center><h1 style="color: white;">Register Emergency</h1></center>
+
+    <form action="" method="post"><br>
+        <table align="center">
+            <tr>
+                <td style="padding: 15px;"><input type="text" name="fname" class="form-control" placeholder="First Name"></td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;"><input type="text" name="lname" class="form-control" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;"><input type="text" name="uname" class="form-control" placeholder="Username"></td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;"><input type="password" name="pswd" class="form-control" placeholder="Password"></td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;"><input type="text" name="type" class="form-control" placeholder="Type"></td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;"><input type="number" name="phone" class="form-control" placeholder="Phone"></td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;"><input type="email" name="email" class="form-control" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="register" class="btn btn-primary"></td>
+            </tr>
+        </table>
+        <br><br>
+    </form>
+    
+</body>
+</html>
+
+{%include 'footer.html'%}

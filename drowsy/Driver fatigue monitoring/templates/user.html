@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/assets/css/login.css">
+    <script>
+        function validatePassword(input) {
+            const password = input.value;
+            const regex = /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/;
+    
+            if (!regex.test(password) || password.length < 8) {
+                input.setCustomValidity('Password must contain at least one lowercase letter, one uppercase letter, one digit, and one special character from @$!%*?&. Minimum length: 8 characters.');
+            } else {
+                input.setCustomValidity('');
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<body>
+    <center><br><br>
+    <!-- <h1 style="color:white">User Registration</h1><br><br>
+
+    <form action="" method="post">
+        <table>
+        <tr>
+            <td style="padding: 15px;"><input type="text" name="fname" class="form-control" placeholder="First Name" oninput="this.value=this.value.replace(/[^a-zA-z]+/g,'');" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><input type="text" name="lname" class="form-control" placeholder="Last Name" oninput="this.value=this.value.replace(/[^a-zA-z]+/g,'');" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><input type="text" name="username" class="form-control" placeholder="Username" oninput="this.value=this.value.replace(/[^a-zA-Z0-9@ ]+/g,''); if(this.value.length < 6) this.setCustomValidity('Username must be at least 6 characters'); else this.setCustomValidity('');" required class="form-control" placeholder="Username" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><input type="password" name="password" class="form-control" placeholder="Password" oninput="validatePassword(input)" required class="form-control" placeholder="Password" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><input type="number" name="vno" class="form-control" placeholder="Vehicle No" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><input type="number" name="phone" class="form-control" placeholder="Phone" oninput="this.value=this.value.replace(/[^0-9]/g,'');if(this.value.length != 10 ) this.setCustomValidity(' Phone number should consist of 10 digit'); else this.setCustomValidity('');" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><input type="email" name="email" class="form-control" placeholder="Email" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Register" name="register" class="btn btn-primary" style="border-radius: 10px;width:100px;height: 50px;"></td>
+        </tr>
+        </table>
+    </form> -->
+    <div class="login-box">
+        <h2>Registration</h2>
+        <form action="" method="post">
+          <div class="user-box">
+            <input type="text" name="fname" required="">
+            <label>First Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="lname" required="">
+            <label>Last Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Password</label>
+          </div>
+          <div class="user-box">
+            <input type="number" name="vno" required="">
+            <label>Vehicle No:</label>
+          </div>
+          <div class="user-box">
+            <input type="number" name="phone" required="">
+            <label>Phone</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="email" required="">
+            <label>Email</label>
+          </div>
+          <div>
+            <input type="submit" value="REGISTER" name="register">
+          
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </form>
+      </div>
+    </center>
+    <br><br>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".Registration">
+
+
+
+    <EditText
+        android:id="@+id/regfname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="FIRST NAME"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="-100dp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <EditText
+        android:id="@+id/reglname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="LAST NAME"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <EditText
+        android:id="@+id/regvnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:hint="VECHICLE NUMBER"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <EditText
+        android:id="@+id/regphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PHONE NUMBER"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/black"
+
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/regemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <EditText
+        android:id="@+id/reguname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="USER NAME"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <EditText
+        android:id="@+id/regpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:inputType="textWebPassword"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regbutton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/newregbtn"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="658dp" />
+
+
+</LinearLayout>

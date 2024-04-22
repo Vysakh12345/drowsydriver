@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginnew"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:background="@drawable/loginpage"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+    <TextView
+        android:id="@+id/loginheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LOGIN"
+        android:textColor="#B4000000"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/username" />
+
+    <EditText
+        android:id="@+id/loginuname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/password" />
+
+        <EditText
+            android:id="@+id/loginpwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="-35dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/reg_text_background"
+        android:text="LOGIN" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/singupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginpage"
+        android:text="SINUP ?"
+        android:textSize="20dp"
+        android:textColor="@color/black"  />
+    </LinearLayout>
+
+
+
+</LinearLayout>

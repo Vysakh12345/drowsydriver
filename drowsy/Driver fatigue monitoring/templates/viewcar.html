@@ -1,0 +1,33 @@
+{%include 'adminheader.html'%}
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<br><br>
+<table border="2" align="center" class="table table-primary" style="width: 800px;">
+    <tr>
+        <th>Sl.No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Vehicle No</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+    </tr>
+    {% for i in data['show'] %}
+    <tr>
+        <td>{{loop.index}}</td>
+        <td>{{i['first_name']}}</td>
+        <td>{{i['last_name']}}</td>
+        <td>{{i['vehicle_no']}}</td>
+        <td>{{i['phone']}}</td>
+        <td>{{i['email']}}</td>
+        <td><b><a href="warning?id={{i['user_id']}}">Send warning</a></b></td>
+        <td><b><a href="viewdetection?id={{i['user_id']}}">View Detection</a></b></td>
+    </tr>
+    {% endfor %}
+</table>
+<br><br>
+{%include 'footer.html'%}

@@ -1,0 +1,69 @@
+{%include 'adminheader.html'%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<body>
+    <center><br><br>
+    <h1 style="color:white">View Drowsiness</h1>
+    <!-- <form action="" method="post">
+        <table>
+            <tr>
+                <th style="color:white">User Name</th>
+                <td style="padding: 15px;">
+                    <select name="user" class="form-control">
+                        {% for i in data['vie']%}
+                        <option value="{{i['user_id']}}">{{i['first_name']}}</option>
+                        {%endfor%}
+                       </select>
+                </td>
+  
+            </tr>
+            <tr>
+                <th style="color:white">Date Time</th>
+                <td style="padding: 15px;"><input type="datetime" name="datetime" class="form-control"></td>
+            </tr>
+            <tr>
+                <th style="color:white">Image</th>
+                <td style="padding: 15px;"><input type="file" name="image" class="form-control"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submit" name="submit" id="" class="btn btn-primary"></td>
+            </tr>
+        </table><br><br>
+    </form> -->
+
+    <table class="table" style="width:500px">
+        <tr>
+            <th>Si No</th>
+            <th>Detected</th>
+            <th>Date Time</th>
+        </tr>
+        {% for i in data['vie'] %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{i['detected']}}</td>
+            <td>{{i['datetime']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
+
+{%include 'footer.html'%}
+
+<style>
+    th,td{
+        color:white
+    }
+</style>

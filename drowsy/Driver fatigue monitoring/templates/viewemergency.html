@@ -1,0 +1,56 @@
+{%include 'emergencyheader.html'%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      background-color:  var(--color-primary);;
+    }
+  </style>
+<body>
+    <center><br><br>
+    <form action="" method="post">
+        <table border="2" class="table table-primary" style="width: 600px;">
+            <tr>
+                <th>Sl.No</th>
+                <th>User</th>
+                <th>Emergency</th>
+                <th>Date Time</th>
+        
+                <th>Location</th>
+          
+                <th>Image</th>
+            </tr>
+            {% for i in data['det'] %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{i['first_name']}}</td>
+                <td>{{i['emergency']}}</td>
+                <td>{{i['date_time']}}</td>
+       
+                <td><a  class="btn btn-warning" href="http://www.google.com/maps?q={{i['latitude']}},{{i['longitude']}}">Location</a></td>
+  
+            
+                <td><img src="{{i['image']}}" alt="" width="200px"></td>
+            </tr>
+            {% endfor %}
+        </table>
+            
+    </form>
+</center>
+<br><br>
+</body>
+</html>
+
+{%include 'footer.html'%}
+<style>
+    th,td{
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
